@@ -64,11 +64,11 @@ header {
   line-height: 1.5;
 }
 header .profile-image {
-  margin-top: 50px;
-  height: 150px;
-  border-radius: 50%;
-  border: 3px solid white;
-  transition: all .5s;
+    margin: 50px 0 25px;
+    height: 175px;
+    border-radius: 50%;
+    border: 10px solid rgba(255,255,255,0.5);
+    transition: all .75s;
 }
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
@@ -192,7 +192,6 @@ a.social:hover {
     padding: 0 30px;
   }
 
-
   main {
     padding-top: 20px;
   }
@@ -209,3 +208,17 @@ a.social:hover {
 
 }
 
+/*Gallery Styles*/
+.gallery.card {
+    max-width: 960px;
+}
+.gallery .flexContainer {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-left: 0;
+}
+.gallery .flex-item {
+    flex: 0 1 33%;
+}
